@@ -1,0 +1,25 @@
+{
+  "name": "proxy-worker",
+  "version": "0.1.0",
+  "description": "Multi-region proxy using Cloudflare Workers with intelligent load balancing",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy:prod": "wrangler deploy --env production",
+    "deploy:dev": "wrangler deploy --env development",
+    "tail": "wrangler tail",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250807.0",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.28.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
+  }
+}
