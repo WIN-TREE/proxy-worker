@@ -61,13 +61,13 @@ BACKEND_2_WEIGHT = "3"
 
 ```bash
 # Development
-npm run dev
+pnpm dev
 
 # Production
-npm run deploy:prod
+pnpm deploy:prod
 
 # Development environment
-npm run deploy:dev
+pnpm deploy:dev
 ```
 
 ## Geographic Routing
@@ -83,7 +83,7 @@ Automatic backend selection based on client country:
 | Europe | GB, DE, FR, NL, IT, ES | `europe-west` |
 | Oceania | AU, NZ | `oceania` |
 
-## Monitoring
+## Monitoring (Development Only)
 
 Access real-time metrics at `/metrics`:
 
@@ -130,13 +130,13 @@ The proxy uses a multi-tier selection algorithm:
 
 ```bash
 # Type check
-npm run type-check
+pnpm type-check
 
 # Watch logs
-npm run tail
+pnpm tail
 
 # Local development
-npm run dev
+pnpm dev
 ```
 
 ## Example Routes
