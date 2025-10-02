@@ -3,8 +3,8 @@ main = "src/index.ts"
 compatibility_date = "2024-12-01"
 
 [[routes]]
-pattern = "api.domain.com/*"
-zone_name = "domain.com"
+pattern = "api.bh10.qzz.io/*"
+zone_name = "bh10.qzz.io"
 
 [[triggers]]
 crons = ["*/1 * * * *"]
