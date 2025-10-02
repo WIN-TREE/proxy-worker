@@ -2,18 +2,14 @@ name = "balancing"
 main = "src/index.ts"
 compatibility_date = "2024-12-01"
 
-[[routes]]
-pattern = "api.bh10.qzz.io/*"
-zone_name = "bh10.qzz.io"
-
 [[triggers]]
 crons = ["*/1 * * * *"]
 
 [env.production]
-name = "proxy-worker"
+name = "balancing"
 
 [env.development]
-name = "proxy-worker-dev"
+name = "balancing-dev"
 
 
 [vars]
